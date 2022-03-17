@@ -1,0 +1,321 @@
+@charset "UTF-8";
+/*
+==========================================================================
+Citizens NS
+==========================================================================
+*/
+.citizens-header-footer .topshadow {
+  display: none;
+}
+
+.citizens-header-footer .footer-disclaimer {
+  border: 3px solid #808080;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 15px;
+  padding: 10px 100px;
+  text-align: center;
+}
+
+.citizens-header-footer .footer-disclaimer .footer-disclaimer-box__text {
+  font-family: CitiSans, arial;
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+.citizens-header-footer .footer-disclaimer .footer-disclaimer-box__list {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.citizens-header-footer .footer-disclaimer .footer-disclaimer-box__list-item {
+  font-family: CitiSans, arial;
+  font-size: 16px;
+  list-style: none;
+  display: inline;
+  padding-left: 3px;
+  text-transform: uppercase;
+}
+
+.citizens-header-footer .footer-disclaimer-box__list-item::before {
+  content: "•";
+  font-size: 21px;
+  line-height: 12px;
+  padding-right: 3px;
+}
+
+.responsive-enabled .page-logo img {
+  max-width: none;
+}
+
+@media screen and (max-width: 880px) {
+  .responsive-enabled .two-col .main-content {
+    float: left;
+  }
+}
+
+.account-section-title.checkmark h1 {
+  padding: 0px 0px 5px 28px !important;
+}
+
+.timeout-modal {
+  font-size: 1em !important;
+  line-height: 1.4 !important;
+  font-family: CitiSans, Helvetica, Arial, sans-serif !important;
+  color: #444;
+}
+
+.footer-row {
+  line-height: 1.4;
+  font-family: CitiSans, Helvetica, Arial, sans-serif;
+}
+
+.citone-footer-row ul {
+  width: 44%;
+}
+
+.citone-footer-row ul.last {
+  width: 12%;
+}
+
+.footer-row a {
+  font-size: 12px;
+}
+
+.citizens-header-footer .error-message {
+  position: relative;
+  background: #FEF3F3;
+  color: red;
+  padding: 0px;
+}
+
+.citizens-header-footer div {
+  font-family: CitiSans, Helvetica, Arial, sans-serif;
+}
+
+.timeout-modal p {
+  font-size: 1em !important;
+  line-height: 1.4 !important;
+  font-family: "CitiSans", Helvetica, Arial, sans-serif !important;
+}
+
+.timeout-modal .button {
+  font-size: 0.80em !important;
+  font-weight: 600 !important;
+  line-height: 22px !important;
+}
+
+/* To fix the checkbox in IE browsers */
+input[type=checkbox] {
+  visibility: hidden;
+  position: absolute;
+}
+
+input[type=radio] {
+  visibility: hidden;
+  position: absolute;
+}
+
+select#SavedUserID {
+  max-width: 249px;
+}
+
+/* Fix iOS divices to restrict ZOOM in */
+.form-item input[type=text] {
+  font-size: 16px;
+}
+
+.form-item input[type=password] {
+  font-size: 16px;
+}
+
+.error-message h1 {
+  color: #F00;
+}
+
+.status-message h1 {
+  color: #209db9;
+}
+
+.warning-message h1 {
+  color: #ee9037;
+}
+
+select#SavedUserID,
+input#Response,
+input#currentpassword,
+input#UserID {
+  height: 32px;
+}
+
+#stickyFooterBranch {
+  color: #444;
+}
+
+input.submit-button.arrow[disabled],
+.button.arrow[disabled] {
+  background: url(../img/arrow-right-gray.png) right center no-repeat #BCBEBF;
+  background-position-x: 55px;
+}
+
+/* IE fix for the footer to not show the underline on image*/
+a.contact,
+a.locator {
+  text-decoration: none;
+}
+
+.account-underline:hover {
+  text-decoration: underline;
+}
+
+#confirm-password-tooltip.tooltip-right .tooltip-box {
+  left: 40px;
+}
+
+/*show/hide password for login pages*/
+/*#showpswd {
+    cursor: pointer;
+    color: #808080;
+    position:absolute;
+    bottom: 15px;
+}
+.show-hide {
+    display: inline-block;
+    margin-left: -60px;
+    padding-right: 20px;
+    margin-right: 35px;
+}*/
+@media screen and (max-width: 900px) {
+  select#SavedUserID {
+    max-width: 100%;
+  }
+}
+
+.enrollment-error-msg {
+  color: red;
+  font-size: 16px;
+  padding: 20px 20px 20px 50px;
+  background: url(/efs/efs/grafx/global-error.png) 15px no-repeat;
+}
+
+/*IE fix for not to display eye or x icon in password box*/
+/*input[type=password]::-ms-clear, input[type=password]::-ms-reveal, input[type=text]::-ms-clear{
+    display:none;
+}
+input[type=password]::-ms-clear , input[type=text]::-ms-clear {
+    width : 0;
+    height: 0;
+}*/
+/*login- faq issue fix*/
+.account-section .loginfaq .faq-content-list {
+  padding-left: 15px;
+}
+
+.account-section .loginfaq .faq-content-list li {
+  list-style-type: disc;
+}
+
+/*#enrollshowpswd {
+    cursor: pointer;
+    color: gray;
+    position: absolute;
+    bottom: 7px;
+}*/
+/* Added CSS for onfocus of check box element image visibility.As per ALM#3073*/
+#cbSaveUserID {
+  visibility: visible;
+}
+
+.save-userid {
+  font-family: "Arial", sans-serif;
+}
+
+label[for="currentpassword"],
+label[for="UserID"],
+label[for="cbSaveUserID"] {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+}
+
+.wao-cancel {
+  padding-left: 15px;
+  color: #F1912B;
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.rememberme-label {
+  padding-top: 25px;
+}
+
+/*Fix font for all input*/
+input[type=text] {
+  font-family: Arial, sans-serif;
+}
+
+/*@media screen and (max-width: 880px) {
+    .show-hide {
+        margin-right: 0px;
+    }
+}*/
+.tooltip-right-custom {
+  float: right;
+}
+
+/* safari fix for show password*/
+/*.citizens-Safari .show-hide {
+    margin-left: -75px;
+    margin-right: 51px;
+}*/
+@media screen and (max-width: 880px) {
+  .tooltip-box {
+    left: 0px;
+  }
+}
+
+@media screen and (min-width: 881px) {
+  .tooltip-box {
+    left: 40px;
+  }
+}
+
+input#stickyFooterBranch {
+  font-family: "CitiSans", "Trebuchet MS", Helvetica, Arial, sans-serif;
+  width: 166px;
+}
+
+/*
+SRT-1180 to pack the global message.
+ */
+#GlobalMessageContainer .global-message {
+  margin: 0px;
+  padding: 10px 20px 10px 50px;
+}
+
+#GlobalMessageContainer .global-message p {
+  margin: 0.5em 0;
+}
+
+#GlobalMessageContainer .global-message h1 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 460px) {
+  .responsive-enabled .timeout-modal {
+    width: auto;
+  }
+  .simplemodal-wrap {
+    height: auto !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .citizens-header-footer .footer-disclaimer {
+    padding: 10px 40px;
+  }
+}
+
+/*# sourceMappingURL=citizensns.min.42588.css.map */

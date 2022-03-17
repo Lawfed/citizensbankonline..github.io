@@ -1,0 +1,475 @@
+a {
+    color: #00A0BE;
+}
+
+/* Remove default fieldset styles. */
+fieldset {
+	margin: 0 0 10px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+fieldset.two-column {
+    float: left;
+    width: 48%;
+}
+fieldset.two-column.right {
+    float: right;
+}
+
+legend {
+    margin: 10px 0;
+    font-weight: 800;
+}
+
+input[type=password] {
+	height: 28px;
+	padding: 0 8px;
+	border:1px solid #C7C9CA;
+	border-radius: 5px;
+	font-weight: 300;
+	line-height: 28px;
+}
+
+.two-column .form-item,
+.form-item.full-width{
+    width: 100%;
+    max-width: none;
+}
+/*.form-item.full-width input {
+    max-width:248px;
+}*/
+.form-item label em {
+	color: #888888;
+	margin-left: 5px;
+}
+.form-item textarea {
+	width: 100%;
+	height: 90px;
+	border: 1px solid #CCC;
+	padding: 10px;
+	font-size: 12px;
+	color: #7F7F7F;
+	font-family: Arial, sans-serif;
+}
+
+.terms-agree {
+	margin-bottom: 20px;
+}
+.terms-agree label {
+	font-size: 14px;
+}
+.terms-agree .print-terms {
+	float: right;
+    text-align: right;
+	font-size: 14px;
+    width: 80px;
+}
+
+.radio-item input[type=radio] {
+    float: left;
+    margin-top: 5px;
+    width: auto;
+}
+.radio-item label {
+    float: left;
+    padding: 0 0 0 5px;
+    width: auto;
+}
+html:not(.lt-ie9) .radio-item input[type=radio] {
+	position: absolute;
+    opacity: 0;
+}
+
+html:not(.lt-ie9) .radio-item label {
+    float: none;
+    width: auto;
+    position: relative;
+    padding-left: 26px;
+    margin-right: 26px;
+}
+
+html:not(.lt-ie9) .radio-item label:after{
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+html:not(.lt-ie9) .radio-item input[type=radio]:focus + label:after {
+    box-shadow: 0 0 5px #007b5e !important;
+    border-color: #007b5e;
+}
+
+html:not(.lt-ie9) .radio-item input[type=radio]:checked + label:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    left: 4px;
+    top: 4px;
+    background: #009c77;
+}
+
+
+.tooltip-arrow {
+    margin: 0;
+}
+
+.account-title p {
+    margin: 5px 0;
+    font-family: Arial, sans-serif;
+    font-size:14px;
+}
+.account-title h4{
+    font-family: "CitiSans", Arial, sans-serif;
+    font-size:20px ;
+    line-height:1em;
+    margin:0;
+    font-weight:300;
+}
+.account-title span {
+	margin-left: 0;
+}
+.account-title ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.account-title li {
+    margin-top: 5px;
+}
+
+.account-section-title.account-secure h1{
+    min-height: 22px;
+    padding-left: 28px;
+    margin-top: 10px;
+    background: url(../../img/icon-secure.png) no-repeat left top;
+    font-size: 25px;
+}
+.ipad .account-section-title h1 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 800;
+    background: none;
+}
+.account-section-title.checkmark h1{
+	background: url(/efs/efs/grafx/icon-checkmark.png) no-repeat left top;
+	padding: 5px 0px 5px 28px;
+}
+
+.account-section-title .error-message {
+	display: block;
+	background-color: transparent;
+	font-size: 20px;
+}
+
+.global-message {
+    margin-top: 20px;
+    padding: 20px 20px 20px 50px;
+    position: relative;
+    font-size: 14px;
+}
+.global-message:before {
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+    left: 6px;
+    font-size: 3em;
+    font-family: 'citi-icons';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+.global-message.error-message {
+    background: #FEF3F3;
+    color: #F00;
+    font-size: 14px;
+}
+.global-message.error-message:before {
+    content: "\e611";
+}
+.global-message.warning-message {
+    background: #fdf3eb;
+    color: #ee9037;
+}
+.global-message.warning-message:before {
+    content: "\e626";
+}
+.global-message.warning-message a {
+    color: #ee9037;
+    text-decoration: underline;
+}
+.global-message.status-message {
+    background: #e7f7fd;
+    color: #209db9;
+}
+.global-message.status-message:before {
+    content: "\e615";
+}
+.global-message.status-message a {
+    color: #209db9;
+    text-decoration: underline;
+}
+
+.multbutton input[type="submit"]{
+    display: block;
+    margin-bottom: 10px;
+}
+#main-content.full-width{
+    width:100%;
+    max-width: 100%;
+}
+
+.account-table-full .account-content-container {
+	overflow: visible;
+}
+.account-table-full .account-title {
+    margin-bottom: 10px;
+}
+
+
+a.button:hover{
+	text-decoration: none;
+}
+.security-image {
+    margin-bottom: 20px;
+}
+
+header.darkgreen-top{
+    background-color: #009D78;
+    font-family: "CitiSans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 10px 20px;
+}
+header.darkgreen-top h1{
+	margin: 0px;
+	color: #FFFFFF;
+}
+.darkgreen-top .secure {
+    padding: 5px 0 0 25px;
+    background: url(/efs/efs/grafx/icon-secure-white.png) 0 5px no-repeat transparent;
+}
+
+.faq-list {
+    clear: both;
+    list-style: none;
+    padding: 0 0 0 0.750em;
+}
+.faq-list li {
+    color: #00A0BE;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.faq-list li div {
+    display: none;
+    color: #666666;
+    cursor: default;
+    margin-top: 15px;
+}
+.faq-list li.open div {
+    display: block;
+}
+.faq-list li:before {
+    content: ">";
+    margin-left: -0.750em;
+}
+.faq-list li.open:before {
+    content: "<";
+}
+
+.submit-button {
+    text-transform: uppercase;
+}
+.form-actions {
+    font-size: 12px;
+}
+.form-actions span,
+.form-actions a.cancel {
+    color: #F1912B;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.form-actions p{
+    font-size: 13px;
+}
+
+.security-question-form{
+    position: relative;
+	width: 60%;
+    font-family:Arial, sans-serif;
+}
+.security-question-form input[type="text"]{
+	width: 50%;
+}
+.security-question-form label{
+	display: block;
+}
+.stepUpForm{
+	position: relative;
+	width: 60%;
+    font-family:Arial, sans-serif;
+}
+.stepUpForm input[type="text"]{
+	width: 50%;
+}
+.stepUpForm label{
+	display: block;
+}
+.checkbox{
+	display: block;
+    width: 100%;
+}
+input.submit-button.arrow, .button.arrow{
+	padding-right: 25px;
+	background: url(../../img/arrow-button-white.png) right center no-repeat #F1912B;
+}
+.button.arrow:focus {
+    outline: thin dotted #333;
+}
+input.submit-button.arrow[disabled], .button.arrow[disabled] {
+    background-color: #BCBEBF;
+}
+
+.image-cat{
+	position: relative;
+    width:50%;
+    float:none;
+    margin-bottom:25px;
+}
+
+.image-cat h4{
+    margin-bottom:5px;
+}
+
+/* Commenting out, want to start page showing photos div
+.image-cat-photos {
+    display: none;
+}
+*/
+
+.security-question-form ul{
+	list-style: none;
+	padding-left: 0px;
+    overflow:visible !important;
+    height:auto !important;
+    width:100% !important;
+}
+.security-question-form li{
+	margin-top:10px;
+}
+.security-question-form h4{
+    margin-bottom:5px;
+}
+.stepUpForm ul{
+	list-style: none;
+	padding-left: 0px;
+    overflow:visible !important;
+    height:auto !important;
+    width:100% !important;
+}
+.stepUpForm li{
+	margin-top:10px;
+}
+.stepUpForm h4{
+    margin-bottom:5px;
+}
+
+.personal-phrase-form .tooltip{
+	float:right;
+	margin-top: 3px;
+}
+
+.tooltip-icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 0;
+    margin-bottom: -2px;
+    background: url(../../img/flows-tooltip.png) center left no-repeat transparent;
+}/*
+.tooltip:hover .tooltip-content,
+.tooltip:hover .tooltip-box {
+    display: block;
+}*/
+.tooltip-content p {
+    margin: 10px 0;
+    font-size: 13px;
+    line-height:15px;
+    font-weight: 400;
+}
+.validation-tooltip .tooltip-content p {
+	position: relative;
+    padding-left: 20px;
+}
+.validation-tooltip .tooltip-content img {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 0;
+    margin-top: -6px;
+}
+
+/* -----------------------------------
+ * --ERROR STATES
+ * ----------------------------------- */
+.show-error{
+    display: none;
+    color: red;
+    font-size: 14px;
+    clear:both;
+}
+.error-message.error-visible,
+.show-error.error-visible {
+    display: block;
+}
+
+.error-tooltip{
+    position: absolute;
+    padding: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,.4);
+    left: -147px;
+    top: 22px;
+    background: #fff;
+    font-size: 12px;
+    z-index: 1000;
+}
+.error-tooltip:after{
+    content: "▶";
+    position: absolute;
+    right: -15px;
+    top: 3px;
+    font-size: 19px;
+    color: #fff;
+    text-shadow: 2px 1px 4px rgba(0,0,0,.2);
+}
+label.error{
+    color:red;
+}
+input[type=text].error{
+    border-color:red;
+}
+
+@media screen and (max-width:600px){
+	.security-question-form{
+        width:250px;
+    }
+    .stepUpForm{
+        width:250px;
+    }
+    fieldset.two-column{
+        width:auto;
+    }
+}
+
+.login__section-identity-verify-unsuccessful {
+  display: block;
+  height: 8px;
+  background: #009D78;
+  margin-bottom: 18px;
+}

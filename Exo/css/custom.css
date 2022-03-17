@@ -1,0 +1,20 @@
+*::selection {
+    background-color: #dc35468a;
+}
+
+body {
+    background-color: #1D2026;
+}
+
+.logo {
+    height: 50px;
+}
+
+.navbar {
+    background-color: #1D2026;
+}
+
+.logo-nav {
+    fill: #FFF;
+    height: 40px;
+}

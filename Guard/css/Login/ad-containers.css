@@ -1,0 +1,349 @@
+
+
+/* ==============================================================
+   --base
+   ============================================================== */
+
+
+/*
+ * --type
+ */
+
+/* LARGE type for bold headers (h3) */
+.ad-bigheader{
+    font-size: 60px;
+    color:#009d78;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 1;
+}
+
+/* the main ad header style (h4) */
+.ad-header{
+    margin: 0 !important;
+    color:#009d78;
+    font-weight: 300;
+    font-size: 26px !important;
+    line-height: 1;
+}
+.ad-header span{
+    color: #78bf3c;
+}
+.ad-header.small{
+    text-transform: uppercase;
+    font-size: 14px !important;
+    color:#78bf3c;
+    display: block;
+}
+.ad-header.small + .ad-header{
+    margin-top: 12px;
+}
+
+/* the main subheader (h5) */
+.ad-subheader{
+    margin: 0;
+    color:#78bf3c;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1;
+}
+.ad-header + .ad-subheader,
+.ad-header-small + .ad-header{
+    margin-top: 10px;
+    padding-top: 0;
+}
+
+/* any paragraph text (p) */
+.ad-paragraph{
+    color: #78bf3c;
+    margin: 0;
+}
+
+
+/* the cta */
+.ad-cta{
+    margin-top: 10px;
+}
+.citizens-ad .cta{
+    font-size: .75em;
+    font-weight: 600;
+    color: #f1912b !important;
+    font-family: "CitiSans", Helvetica, Arial, sans-serif !important;
+}
+
+
+
+/**
+ * --images
+ */
+.ad-image{
+    text-align: center;
+    margin: 10px 0;
+    display: none;
+}
+.main-sidebar .ad-image{
+    display: block;
+}
+
+
+/**
+ * --base layout
+ */
+.citizens-ad-wrapper{
+    display: table;
+    width: 100%;
+}
+.ad-main,
+.ad-cta{
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+
+
+/* ==============================================================
+   --templates
+   ============================================================== */
+
+/* ------------------------------------------
+ * --template :: basic green bg with image or without
+ * ------------------------------------------ */
+.citizens-ad{
+    background-color:#E5F4F1;
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* ------------------------------------------
+ * --template :: header/subheader/image
+ * ------------------------------------------ */
+.main-sidebar .citizens-ad.template-3 .ad-cta{
+    text-align: center;
+}
+@media screen and (max-width: 880px) and (min-width: 601px){
+    .main-sidebar .citizens-ad.template-3 .ad-cta{
+        text-align: right;
+    }
+}
+@media screen and (max-width: 600px){
+    .citizens-ad.template-3 .ad-cta{
+        text-align: center;
+    }
+}
+
+/**
+ * --narrow alt (image low)
+ */
+@media screen and (min-width: 881px){
+    .main-sidebar .citizens-ad.template-3.narrow-b{
+        padding-bottom: 140px;
+    }
+    .main-sidebar .citizens-ad.template-3.narrow-b .ad-image{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+    .main-sidebar .citizens-ad.template-3.narrow-b .ad-image img{
+        position: relative;
+        top: 40px;
+    }
+    .main-sidebar .citizens-ad.template-3.narrow-b .ad-cta{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .citizens-ad.template-3.narrow-b{
+        padding-bottom: 140px;
+    }
+    .citizens-ad.template-3.narrow-b .ad-image{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+    .citizens-ad.template-3.narrow-b .ad-image img{
+        position: relative;
+        top: 40px;
+    }
+    .citizens-ad.template-3.narrow-b .ad-cta{
+        text-align: left;
+    }
+}
+
+/**
+ * --wide alt (image left)
+ */
+@media screen and (min-width: 601px){
+    .main-content .citizens-ad.template-3.wide-b,
+    .two-ad-row .citizens-ad.template-3.wide-b{
+        padding-left: 140px;
+    }
+    .main-content .citizens-ad.template-3.wide-b .ad-image,
+    .two-ad-row .citizens-ad.template-3.wide-b .ad-image{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        display: block;
+    }
+}
+
+
+/* ------------------------------------------
+ * --template :: white
+ * ------------------------------------------ */
+.ad-white-bg .citizens-ad{
+    background: #fff;
+    -webkit-box-shadow: inset 0 0 5px 5px #e5f4f1;
+    box-shadow: inset 0 0 5px 5px #e5f4f1;
+}
+
+
+
+/* ==============================================================
+   --layouts
+   ============================================================== */
+
+/* ------------------------------------------
+ * --main content
+ * ------------------------------------------ */
+.main-content .ad-main{
+    width: 70%;
+}
+.main-content .ad-cta{
+    width: 30%;
+}
+.main-content .ad-cta{
+    text-align: right;
+}
+
+
+/* ------------------------------------------
+ * --sidebar
+ * ------------------------------------------ */
+.main-sidebar .ad-main,
+.main-sidebar .ad-cta{
+    display: block;
+}
+@media screen and (max-width: 880px) and (min-width: 601px){
+    .main-sidebar .ad-image{
+        display: none;
+    }
+
+    .main-sidebar .ad-main,
+    .main-sidebar .ad-cta{
+        display: table-cell;
+    }
+
+    .main-sidebar .ad-main{        
+        width: 70%;
+    }
+    .main-sidebar .ad-cta{
+        width: 30%;
+        text-align: right;
+    }
+}
+
+
+/* ------------------------------------------
+ * --two column
+ * ------------------------------------------ */
+.two-ad-row .citi-ad .ad-cta,
+.two-ad-row .citi-ad .ad-main{
+    width: 100%;
+    display: block;
+}
+
+
+/* ------------------------------------------
+ * --three column
+ * ------------------------------------------ */
+.onethird-col .citizens-ad{
+    margin-bottom: 0;
+}
+.onethird-col .citizens-ad .ad-main,
+.onethird-col .citizens-ad .ad-cta{
+    display: block;
+}
+
+
+/* ------------------------------------------
+ * --two and three column layouts
+ * ------------------------------------------ */
+
+
+/* ------------------------------------------
+ * --within the account transactions table
+ * ------------------------------------------ */
+.single-account .account-transactions-table .ad-row .citizens-ad{
+    margin-bottom: 0;
+}
+.single-account .account-transactions-table .ad-row .citizens-ad .ad-header{
+    font-size: 14px !important;
+}
+.single-account .account-transactions-table .ad-row .citizens-ad .ad-subheader{
+    font-size: 12px !important;
+}
+.single-account .account-transactions-table .ad-row .ad-main{
+    font-size: .8em;
+    text-align: left;
+}
+
+
+
+/* ==============================================================
+   --specific pages
+   ============================================================== */
+
+/* ------------------------------------------
+ * --service center
+ * ------------------------------------------ */
+.greenbox.greenborder .ad-container{
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    clear: both;
+    margin-bottom: 0 !important;
+}
+@media screen and (max-width: 880px){
+    .greenbox.greenborder .ad-container{
+        position: static;
+    }
+}
+
+
+
+
+/* ==============================================================
+   --media queries
+   ============================================================== */
+
+@media screen and (max-width: 600px){
+    .main-content .ad-main,
+    .main-content .ad-cta{
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+
+    .main-content .citizens-ad .ad-image,
+    .two-ad-row .citizens-ad .ad-image{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .citizens-ad { padding: 10px; }
+    .account-table .ad-container td { padding: 0; vertical-align: top; }
+    .two-col .account-table .ad-container td:first-child { padding-right: 10px; }
+    .ad-header { font-size: 1.75em !important; line-height: 1.15em; }
+    .ad-subheader { font-size: 1.5em; line-height: 1.15em; }
+    .ad-cta { font-size: 1.35em; }
+}
+
